@@ -6,9 +6,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Learn how to lightsaber fight here!</h1>
+        <h1>Learn how to lightsaber fight!</h1>
       </header>
-      <main><Guards/></main>
+      <main>
+        <Guards/>
+      </main>
     </div>
   );
 }
