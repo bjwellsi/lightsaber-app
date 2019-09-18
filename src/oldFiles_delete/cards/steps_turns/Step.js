@@ -1,22 +1,20 @@
 import React from 'react';
 
-export class Card extends React.Component {
+export class Strike extends React.Component {
     render() {
         let jsx;
         if (this.props.fullscreen === false) {
             jsx = (
-                <div className={this.props.cardType}>
+                <div className="step_data_card card">
                     <h3>{this.props.name}</h3>
                     {this.props.children[0]}
-                    {this.props.children[1]}
                 </div>
             );
         } else {
             jsx = (
-                <div className={this.props.fullscreenType}>
+                <div className="step_data_full">
                     <h3>{this.props.name}</h3>
-                    {this.props.children[0]}
-                    {this.props.children[2]}
+                    {this.props.children[1]}
                 </div>
             )
         }

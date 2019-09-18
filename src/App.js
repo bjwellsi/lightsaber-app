@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
-import { Guards } from './Guards';
+import { Cards } from './Cards';
+import { strikes } from './StrikeList.js';
+import { guards } from './GuardList.js';
+
+
 
 function App() {
   return (
@@ -9,7 +13,8 @@ function App() {
         <h1>Learn how to lightsaber fight!</h1>
       </header>
       <main>
-        <Guards/>
+        <Cards type="strike" cards={strikes}/>
+        <Cards type="guard" cards={guards}/>
       </main>
     </div>
   );
