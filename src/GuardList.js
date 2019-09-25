@@ -111,7 +111,7 @@ export let guards = [
                     <hr/>
                     This stance is useful to test your opponent while creating distance between yourself and him while seeing how he reacts to a saber. Thrusts can also be performed from this guard by stepping forward.                    
                     </p>
-                    <img src={altLongGuard}/>
+                    <img src={altLongGuard} alt="Long Guard"/>
                 <h5>Leads into:</h5>
             </div>
         )

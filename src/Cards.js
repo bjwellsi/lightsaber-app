@@ -15,7 +15,8 @@ export class Cards extends React.Component {
             fullscreenClass = "guard_data_full";
 
         } else if(this.props.type === "step_turn"){
-
+            cardClass="card"
+            fullscreenClass = "step_turn_full"
         }
 
         let jsx = (
