@@ -1,13 +1,13 @@
 import React from 'react';
-import middleCut from './images/from_book/strikes/middle_cut.png';
-import cleaveab from './images/from_book/strikes/cleave_ab.png';
-import cleavecd from './images/from_book/strikes/cleave_cd.png';
-import cleaveLeft from './images/from_book/strikes/left_cleave.png';
-import reverseCleave from './images/from_book/strikes/reverse_cleave.png';
-import basicStrike from './images/from_book/strikes/basic_strike.png';
-import movingStrike from './images/from_book/strikes/step_forward_strike.png';
-import uppercut from './images/from_book/strikes/uppercut.png';
-import blowAngles from './images/from_book/strikes/blow_angles.png';
+import middleCut from '../../../../images/from_book/strikes/middle_cut.png';
+import cleaveab from '../../../../images/from_book/strikes/cleave_ab.png';
+import cleavecd from '../../../../images/from_book/strikes/cleave_cd.png';
+import cleaveLeft from '../../../../images/from_book/strikes/left_cleave.png';
+import reverseCleave from '../../../../images/from_book/strikes/reverse_cleave.png';
+import basicStrike from '../../../../images/from_book/strikes/basic_strike.png';
+import movingStrike from '../../../../images/from_book/strikes/step_forward_strike.png';
+import uppercut from '../../../../images/from_book/strikes/uppercut.png';
+import blowAngles from '../../../../images/from_book/strikes/blow_angles.png';
 
 export let strikes = [
     {

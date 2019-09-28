@@ -1,9 +1,21 @@
 import React from 'react';
 import { Card } from './Card.js';
+import { strikes } from './move_lists/StrikeList.js';
+import { guards } from './move_lists/GuardList.js';
+import { footwork } from './move_lists/FootworkList.js';
+
+//builds list of cards
 
 export class Cards extends React.Component {
 
     render() {
+        function cardSelector(pageHeader) {
+            if (pageHeader === 'guards') return guards;
+            else if (pageHeader === 'strikes') return strikes;
+            else if (pageHeader === 'footwork') return footwork;
+            else throw ('Somehow pageHeader isnt one of the options');
+        }
+
         let dev = false;
         /*let cardClass = "card";
         if(this.props.type === "strike"){
@@ -14,10 +26,10 @@ export class Cards extends React.Component {
             cardClass="card"
         }*/
 
-        let jsx = (
+        return (
             <div className="card_grid">
                 {
-                    this.props.cards.map((item) => (
+                    cardSelector(this.props.type).map((item) => (
                         <Card fullscreen={dev} name={item.name} cardType="card" fullscreenClass="full" setFullscreen={this.props.setFullscreen} fullscreenOff={this.props.fullscreenOff}>
                             {item.img}
                             {item.card}
@@ -28,6 +40,5 @@ export class Cards extends React.Component {
 
             </div>
         );
-        return jsx;
     }
 }

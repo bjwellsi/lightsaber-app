@@ -1,10 +1,10 @@
 import React from 'react';
-import anatomyOfHilt from './images/from_book/getting_started/hilt_anatomy.png';
-import anatomyOfBlade from './images/from_book/getting_started/blade_anatomy.png';
-import grip from './images/from_book/getting_started/grip.png';
-import gripShifting from './images/from_book/getting_started/grip_shifting.png';
-import edgeAnatomy from './images/from_book/getting_started/edge_anatomy.png';
-import bladeRotation from './images/from_book/getting_started/blade_rotation.png';
+import anatomyOfHilt from '../../images/from_book/getting_started/hilt_anatomy.png';
+import anatomyOfBlade from '../../images/from_book/getting_started/blade_anatomy.png';
+import grip from '../../images/from_book/getting_started/grip.png';
+import gripShifting from '../../images/from_book/getting_started/grip_shifting.png';
+import edgeAnatomy from '../../images/from_book/getting_started/edge_anatomy.png';
+import bladeRotation from '../../images/from_book/getting_started/blade_rotation.png';
 
 export class GettingStarted extends React.Component {
     render() {

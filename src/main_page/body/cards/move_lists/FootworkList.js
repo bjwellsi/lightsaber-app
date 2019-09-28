@@ -1,8 +1,8 @@
 import React from 'react';
-import forwardBackward from './images/from_book/footwork/forwardBackward_step.png';
-import fullTurn from './images/from_book/footwork/full_turn.png';
-import halfTurn from './images/from_book/footwork/half_turn.png';
-import stableTurn from './images/from_book/footwork/stable_turn.png';
+import forwardBackward from '../../../../images/from_book/footwork/forwardBackward_step.png';
+import fullTurn from '../../../../images/from_book/footwork/full_turn.png';
+import halfTurn from '../../../../images/from_book/footwork/half_turn.png';
+import stableTurn from '../../../../images/from_book/footwork/stable_turn.png';
 
 
 
@@ -61,7 +61,7 @@ export let footwork = [
         ),
         fullscreen: (
             <div>
-                <p>This turn involves no movement of the feet. In the images above, the student faces the left while placing his weight on his right foot. To turn right, he shifts his weight to the other foot while turning only his torso. 
+                <p>This turn involves no movement of the feet. In the images above, the student faces the left while placing his weight on his right foot. To turn right, he shifts his weight to the other foot while turning only his torso.
 This turn allows stable movement, thus its name. </p>
             </div>
         )

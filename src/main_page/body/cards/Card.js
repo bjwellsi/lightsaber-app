@@ -1,5 +1,7 @@
 import React from 'react';
 
+//stores card info as well as fullscreen info
+
 export class Card extends React.Component {
 
     constructor(props) {

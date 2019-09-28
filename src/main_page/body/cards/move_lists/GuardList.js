@@ -1,14 +1,14 @@
 import React from 'react';
-import powerRight from './images/from_book/guards/power_guard.png';
-import powerLeft from './images/from_book/guards/left_power_guard.png';
-import backGuard from './images/from_book/guards/back_guard.png';
-import horizontalGuard from './images/from_book/guards/back_guard_horizontal.png';
-import backThrustGuard from './images/from_book/guards/back_thrust_guard.png';
-import frontGuard from './images/from_book/guards/front_guard.png';
-import longGuard from './images/from_book/guards/long_guard.png';
-import altLongGuard from './images/from_book/guards/long_guard_alt.png';
-import longTailGuard from './images/from_book/guards/long_tail_guard.png';
-import lowerThrustGuard from './images/from_book/guards/lower_thrust_guard.png';
+import powerRight from '../../../../images/from_book/guards/power_guard.png';
+import powerLeft from '../../../../images/from_book/guards/left_power_guard.png';
+import backGuard from '../../../../images/from_book/guards/back_guard.png';
+import horizontalGuard from '../../../../images/from_book/guards/back_guard_horizontal.png';
+import backThrustGuard from '../../../../images/from_book/guards/back_thrust_guard.png';
+import frontGuard from '../../../../images/from_book/guards/front_guard.png';
+import longGuard from '../../../../images/from_book/guards/long_guard.png';
+import altLongGuard from '../../../../images/from_book/guards/long_guard_alt.png';
+import longTailGuard from '../../../../images/from_book/guards/long_tail_guard.png';
+import lowerThrustGuard from '../../../../images/from_book/guards/lower_thrust_guard.png';
 
 
 export let guards = [
