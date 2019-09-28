@@ -13,7 +13,7 @@ export class Cards extends React.Component {
             if (pageHeader === 'guards') return guards;
             else if (pageHeader === 'strikes') return strikes;
             else if (pageHeader === 'footwork') return footwork;
-            else throw ('Somehow pageHeader isnt one of the options');
+            else throw new Error('Somehow pageHeader isnt one of the options (thrown from cards.js) PageHeader: ' + pageHeader);
         }
 
         let dev = false;
@@ -30,7 +30,12 @@ export class Cards extends React.Component {
             <div className="card_grid">
                 {
                     cardSelector(this.props.type).map((item) => (
-                        <Card fullscreen={dev} name={item.name} cardType="card" fullscreenClass="full" setFullscreen={this.props.setFullscreen} fullscreenOff={this.props.fullscreenOff}>
+                        <Card fullscreen={dev}
+                            name={item.name} cardType="card"
+                            fullscreenClass="full"
+                            setFullscreen={this.props.setFullscreen}
+                            fullscreenOff={this.props.fullscreenOff}
+                            >
                             {item.img}
                             {item.card}
                             {item.fullscreen}
