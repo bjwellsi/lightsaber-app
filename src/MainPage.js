@@ -39,8 +39,7 @@ export class MainPage extends React.Component {
   }
 
   render() {
-    function cardSelector() {
-      let pageHeader = this.state.page;
+    function cardSelector(pageHeader) {
       if(pageHeader === 'guards') return guards;
       else if (pageHeader === 'strikes') return strikes;
       else if (pageHeader === 'footwork') return footwork;
@@ -51,7 +50,7 @@ export class MainPage extends React.Component {
     if (this.state.page === 'start') {
       page = <GettingStarted />;
     } else {
-      page = <Cards type={this.state.page} cards={cardSelector()} setFullscreen={this.setFullscreen} fullscreenOff={this.fullscreenOff} />;      
+      page = <Cards type={this.state.page} cards={cardSelector(this.state.page)} setFullscreen={this.setFullscreen} fullscreenOff={this.fullscreenOff} />;      
     }
 
     return (
