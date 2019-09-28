@@ -75,19 +75,20 @@ export let strikes = [
         fullscreen: (<div>
             <p>A: Stand in the power guard, with the saber chambered to the right
                 <br />B: Bring the saber forward, keeping the hilt chest level and the point raised skyward
+            <br></br>
             <img src={cleavecd} alt="Next steps of cleave" />
-                C: Strike the point through the center-line of your body, moving through long guard
+                <br></br>C: Strike the point through the center-line of your body, moving through long guard
             <br />D: Allow the point of the saber to descend to a space just above the ground in front of and to the left of you, into lower thrust guard
             <hr />
                 The strength of the impact comes from the rotation of the blade as it swings from your shoulder to long guard position in C above. If real, the saber would cut your opponent from their lower jaw through their chest.
             <br />
                 The reverse of this movement is called the false-edge reverse uppercut. The strike takes place with the false edge of the saber, and is called a reverse strike because the attack originates from the opposite side of your body from your forward foot.
             <br />
-                To practice these strike, perform cleaves and uppercuts while stepping forward on each strike. If you chamber the saber over your left shoulder, you can instead perform a reverse cleave followed by a false-edge uppercut.
+                To practice these strikes, perform cleaves and uppercuts while stepping forward on each strike. If you chamber the saber over your left shoulder, you can instead perform a reverse cleave followed by a false-edge uppercut.
             <br />
                 You can also allow the saber to continue past you to long tail guard for extra power on the next uppercut.
-            <img src={cleaveLeft} alt="Left handed cleave" />
-                A: Stand in power guard with a left shoulder chamber
+            <br></br><img src={cleaveLeft} alt="Left handed cleave" />
+                <br></br>A: Stand in power guard with a left shoulder chamber
             <br />B: Initiate your cleave
             <br />C: Reach maximum extension with long guard
             <br />D: Continue the strike until the point is pointed at the ground in lower thrust guard.

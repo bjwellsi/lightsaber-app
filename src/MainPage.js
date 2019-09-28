@@ -10,7 +10,7 @@ export class MainPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: 'landing',
+      page: 'start',
       fullscreen: false
     }
     this.fullscreenOff = this.fullscreenOff.bind(this);
@@ -39,20 +39,19 @@ export class MainPage extends React.Component {
   }
 
   render() {
+    function cardSelector() {
+      let pageHeader = this.state.page;
+      if(pageHeader === 'guards') return guards;
+      else if (pageHeader === 'strikes') return strikes;
+      else if (pageHeader === 'footwork') return footwork;
+      else throw ('Somehow pageHeader isnt one of the options');
+    } 
+
     let page;
-    if (this.state.page === 'landing') {
-      page = <h3>Select a category to get started!</h3>;
-    }
-    else if (this.state.page === 'start') {
+    if (this.state.page === 'start') {
       page = <GettingStarted />;
-    } else if (this.state.page === 'guards') {
-      page = <Cards type="guard" cards={guards} setFullscreen={this.setFullscreen} fullscreenOff={this.fullscreenOff} />;
-    }
-    else if (this.state.page === 'strikes') {
-      page = <Cards type="strike" cards={strikes} setFullscreen={this.setFullscreen} fullscreenOff={this.fullscreenOff} />;
-    }
-    else if (this.state.page === 'footwork') {
-      page = <Cards type="footwork" cards={footwork} setFullscreen={this.setFullscreen} fullscreenOff={this.fullscreenOff} />;
+    } else {
+      page = <Cards type={this.state.page} cards={cardSelector()} setFullscreen={this.setFullscreen} fullscreenOff={this.fullscreenOff} />;      
     }
 
     return (

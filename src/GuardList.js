@@ -17,7 +17,6 @@ export let guards = [
         img: <img src={powerRight} alt="Power Guard" />,
         card: (
             <div>
-                <h5>Leads into</h5>
             </div>
         ),
         fullscreen: (
@@ -31,7 +30,6 @@ export let guards = [
                     This guard allows for the strongest blows. It also allows you to defend and strike quickly while delivering powerful blows. A thrust can be countered from this position by performing a cleave.
                 </p>
                 <img src={powerLeft} alt="Left Power Guard" />
-                <h5>Leads into:</h5>
             </div>
         )
     },
@@ -40,7 +38,6 @@ export let guards = [
         img: <img src={backGuard} alt="Back Guard" />,
         card: (
             <div>
-                <h5>Leads into</h5>
             </div>
         ),
         fullscreen: (
@@ -50,8 +47,6 @@ export let guards = [
                 </p>
                 <img src={horizontalGuard} alt="Horizontal Guard" />
                 <p>The back guard is useful much for the same reasons as the power guard, the main difference being that the back guard sets one up for other strikes. Which to adopt is a matter of of distance between oneself and one’s opponent. </p>
-
-                <h5>Leads into:</h5>
             </div>
         )
     },
@@ -60,7 +55,6 @@ export let guards = [
         img: <img src={backThrustGuard} alt="Back Thrust Guard" />,
         card: (
             <div>
-                <h5>Leads into</h5>
             </div>
         ),
         fullscreen: (
@@ -70,8 +64,6 @@ export let guards = [
                 <hr />
                     This is a good position from which to perform strong thrusts, even without taking a step. It can also be used to parry with a false-edge reverse uppercut.
                 </p>
-
-                <h5>Leads into:</h5>
             </div>
         )
     },
@@ -80,7 +72,6 @@ export let guards = [
         img: <img src={frontGuard} alt="Front Guard" />,
         card: (
             <div>
-                <h5>Leads into</h5>
             </div>
         ),
         fullscreen: (
@@ -92,7 +83,6 @@ export let guards = [
                     <hr />
                     This guard is largely defensive, as it allows uppercuts to parry cleaves and thrusts, or any such downward strike from your opponent. Thrusts can be performed from this position, but it’s best for uppercuts.
                     </p>
-                <h5>Leads into:</h5>
             </div>
         )
     },
@@ -101,7 +91,6 @@ export let guards = [
         img: <img src={longGuard} alt="Long Guard" />,
         card: (
             <div>
-                <h5>Leads into</h5>
             </div>
         ),
         fullscreen: (
@@ -112,7 +101,6 @@ export let guards = [
                     This stance is useful to test your opponent while creating distance between yourself and him while seeing how he reacts to a saber. Thrusts can also be performed from this guard by stepping forward.                    
                     </p>
                     <img src={altLongGuard} alt="Long Guard"/>
-                <h5>Leads into:</h5>
             </div>
         )
     },
@@ -121,7 +109,6 @@ export let guards = [
         img: <img src={longTailGuard} alt="Long Tail Guard" />,
         card: (
             <div>
-                <h5>Leads into</h5>
             </div>
         ),
         fullscreen: (
@@ -131,7 +118,6 @@ export let guards = [
                     <hr/>
                     It may be helpful to think of this guard as the counter to the power guard, as the reverse uppercut is performed from this stance and can parry a cleave from a power guard. It can be useful to wait in the long tail guard if the opponent is in a power guard, but you can also shift to a lower thrust stance to prepare to thrust.
                 </p>
-                <h5>Leads into:</h5>
             </div>
         )
     },
@@ -140,7 +126,6 @@ export let guards = [
         img: <img src={lowerThrustGuard} alt="Lower Thrust Guard" />,
         card: (
             <div>
-                <h5>Leads into</h5>
             </div>
         ),
         fullscreen: (
@@ -148,7 +133,6 @@ export let guards = [
                 <p>
                 This guard is a a good upward thrusting position, and the point of the blade is held low to the ground. In addition to the thrust you can perform a false-edge reverse uppercut from this position. 
                 </p>
-                <h5>Leads into:</h5>
             </div>
         )
     }

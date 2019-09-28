@@ -8,7 +8,7 @@ import stableTurn from './images/from_book/footwork/stable_turn.png';
 
 export let footwork = [
     {
-        name: "Forward, Backward, and Half Step",
+        name: "Forward, Backward, Half Step",
         img: <img src={forwardBackward} alt="Forward and Backward Step" />,
         card: (
             <div>
