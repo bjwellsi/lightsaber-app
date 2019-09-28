@@ -1,36 +1,29 @@
 import React from 'react';
 
 export class Card extends React.Component {
-   
-    constructor(props){
+
+    constructor(props) {
         super(props);
-        this.state = ({fullscreen: this.props.fullscreen});
-        this.toggleFullscreen = this.toggleFullscreen.bind(this);
+        this.state = ({ fullscreen: this.props.fullscreen });
+        this.fullscreen = this.fullscreen.bind(this);
     }
 
-    toggleFullscreen() {
-        this.setState({fullscreen: !this.state.fullscreen});
+    fullscreen(e) {
+        let sec = (<div className={this.props.fullscreenClass} onClick={this.props.fullscreenOff}>
+            <h3>{this.props.name}</h3>
+            {this.props.children[0]}
+            {this.props.children[2]}
+        </div>);
+        this.props.setFullscreen(sec);
     }
 
     render() {
-        let jsx;
-        if (this.state.fullscreen === false) {
-            jsx = (
-                <div className={this.props.cardType} onClick={this.toggleFullscreen}>
-                    <h3>{this.props.name}</h3>
-                    {this.props.children[0]}
-                    {this.props.children[1]}
-                </div>
-            );
-        } else {
-            jsx = (
-                <div className={this.state.fullscreenType} onClick={this.toggleFullscreen}>
-                    <h3>{this.props.name}</h3>
-                    {this.props.children[0]}
-                    {this.props.children[2]}
-                </div>
-            )
-        }
-        return jsx;
+        return (
+            <div href="main" className={this.props.cardType} onClick={this.fullscreen}>
+                <h3>{this.props.name}</h3>
+                {this.props.children[0]}
+                {this.props.children[1]}
+            </div>
+        );
     }
 }

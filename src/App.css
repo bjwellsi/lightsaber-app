@@ -11,6 +11,11 @@ body {
   background-color: #7DBA84;
 }
 
+main {
+  position: relative;
+  top: 100px;
+}
+
 h1 {
   margin: 0;
 }
@@ -20,12 +25,16 @@ h1 {
 }
 
 .App-header {
+  position: fixed;
+  width: 100%;
   background-color: #8FD694;
   min-height: 10vh;
   flex-direction: column;
   align-items: center;
   font-size: calc(5px + 2vmin);
   color: white;
+  border-bottom: black solid 2px;
+  z-index: 20;
 }
 
 .selector-grid {
@@ -79,4 +88,20 @@ h1 {
 .guard_data_card img{
   border-top: 2px black solid;
   border-bottom: 2px black solid;
+}
+
+.full img {
+  max-width: 100%;
+}
+
+.strike_data_full, .guard_data_full, .step_turn_full, .full {
+  position: absolute;
+  width: 70%;
+  z-index: 15;
+  left: 15%;
+  top: 50px;
+  margin: 0;
+  background-color: #8FD694;
+  border: solid black 2px;
+  border-radius: 10px;
 }

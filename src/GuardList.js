@@ -66,7 +66,7 @@ export let guards = [
         fullscreen: (
             <div>
                 <p>
-                    This guard can be entered into via a stable turn during a lower thrust guard while maintaining your saber’s position in space. This is a rear weighted position.
+                    This guard can be entered into by doing a stable turn during a lower thrust guard, while maintaining your saber’s position in space. This is a rear weighted position.
                 <hr />
                     This is a good position from which to perform strong thrusts, even without taking a step. It can also be used to parry with a false-edge reverse uppercut.
                 </p>
