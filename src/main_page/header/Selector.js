@@ -21,6 +21,10 @@ export class Selector extends React.Component {
                 <button onClick={this.pageChange} id="footwork">Footwork</button>
             </div>
         )
-
     }
 }
+
+/*
+Selector.propTypes = {
+    setPage: React.PropTypes.func.isRequired
+}*/

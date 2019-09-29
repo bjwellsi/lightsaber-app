@@ -6,7 +6,6 @@ export class Card extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = ({ fullscreen: this.props.fullscreen });
         this.fullscreen = this.fullscreen.bind(this);
     }
 
@@ -29,3 +28,12 @@ export class Card extends React.Component {
         );
     }
 }
+
+/*
+Card.propTypes = {
+    fullscreenOff: React.PropTypes.func.isRequired,
+    setFullscreen: React.PropTypes.func.isRequired,
+    cardType: React.PropTypes.string.isRequired,
+    fullscreenClass: React.PropTypes.string.isRequired,
+    name: React.PropTypes.string.isRequired
+}*/

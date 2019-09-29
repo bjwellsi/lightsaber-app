@@ -27,3 +27,10 @@ export const MainPage = (props) => {
     )
 
 }
+
+/*
+MainPage.propTypes = {
+    page: React.PropTypes.string.isRequired,
+    isFullscreen: React.PropTypes.func.isRequired,
+    fullscreenSec: React.PropTypes.object.isRequired,
+}*/
